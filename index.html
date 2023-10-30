@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Images</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          title="Mostafa Yasser - Font-End Developer"
+          src="images/logo.png"
+          alt="My Logo: Mostafa"
+          class="my-logo"
+        />
+      </div>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/Moustafa-Yasser"
+            >Github</a
+          >
+        </li>
+        <li>
+          <a target="_blank" href="https://t.me/Moustafa_yasser1">Telegram</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.youtube.com/@mostafa_yasser"
+            >Youtube</a
+          >
+        </li>
+      </ul>
+    </header>
+    <main>
+      <div class="intro">
+        <h1>إبحث في ملايين الصور عن ما تريد</h1>
+      </div>
+      <form action="" class="search">
+        <div>
+          <label for="search-img"
+            ><input type="submit" id="sub" value="بحث"
+          /></label>
+          <input type="search" name="Search" id="search-img" />
+        </div>
+        <p>هناك <span id="total"></span> صورة متعلق بما تبحث عنه!</p>
+      </form>
+      <div class="container"></div>
+      <button class="show-more">عرض المزيد من الصور</button>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

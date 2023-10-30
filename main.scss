@@ -1,0 +1,122 @@
+@import "Helper/mixins";
+@import url("https://fonts.googleapis.com/css2?family=Marhey:wght@400;500;600;700&display=swap");
+img {
+  width: 100px;
+}
+* {
+  @include rest-ele;
+}
+body {
+  color: white;
+  font-family: "Marhey", sans-serif;
+  direction: rtl;
+  min-height: 100vh;
+  background-color: #1d1d41;
+}
+header {
+  direction: ltr;
+  @include handel-navBar(one, #40345a, inherit, null, 3px);
+}
+main {
+  .intro {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0 20px;
+  }
+  .search {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    div {
+      @include center-ele;
+      margin: 20px 0;
+      input[type="search"] {
+        border: none;
+        outline: none;
+        transition: all 0.5s ease;
+        height: 50px;
+        padding: 13px 10px;
+        font-size: 20px;
+        color: black;
+        font-family: inherit;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        box-shadow: 10px 0 19px 0 black;
+      }
+      label {
+        height: 30px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        background-color: #e3969b;
+        @include center-ele;
+        input[type="submit"] {
+          cursor: pointer;
+          width: 50px;
+          border: none;
+          background-color: transparent;
+          color: inherit;
+          font-family: inherit;
+        }
+      }
+    }
+  }
+  .container {
+    @include center-ele;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px 0px;
+    .box {
+      width: 300px;
+      background-color: #10102a;
+      cursor: pointer;
+      box-shadow: 0 0 20px 0 #00000054;
+      height: 300px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: all 0.5s ease;
+        &:hover {
+          filter: brightness(0.5);
+          scale: 1.1;
+        }
+      }
+    }
+  }
+  button.show-more {
+    color: inherit;
+    border: none;
+    outline: none;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    background-color: #10102a;
+    font-family: inherit;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    right: 50%;
+    transform: translateX(50%);
+    display: none;
+  }
+}
+/* clears the ‘X’ from Internet Explorer */
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
