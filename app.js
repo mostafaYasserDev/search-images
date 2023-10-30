@@ -19,7 +19,6 @@ async function searchImage() {
   const results = data.results;
   const total = document.getElementById("total");
   total.textContent = data.total;
-  console.log(data);
   if (page == 1) {
     result.innerHTML = "";
   }
