@@ -41,7 +41,7 @@ async function searchImage() {
   if (page > 1) {
     more.style.display = "inline";
     form.children[1].style = "display:block";
-    more.innerHTML = "عرض المزيد من الصور";
+    more.innerHTML = "View more photos";
   }
 
   if (data.total == 0) {
@@ -49,7 +49,7 @@ async function searchImage() {
   }
 
   if (data.total_pages == 1 || data.results.length == 0) {
-    more.innerHTML = "هذه كل الصور، نرجوا أن تكون وجدت ما تريد";
+    more.innerHTML = "These are all the pictures, we hope you found what you want.";
   }
 }
 form.addEventListener("submit", (ev) => {
