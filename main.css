@@ -12,7 +12,7 @@ img {
 body {
   color: white;
   font-family: "Marhey", sans-serif;
-  direction: rtl;
+/*   direction: rtl; */
   min-height: 100vh;
   background-color: #1d1d41; }
 
